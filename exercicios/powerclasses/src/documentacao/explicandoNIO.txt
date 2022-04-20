@@ -1,0 +1,31 @@
+NIO – é um pacote que foi introduzido ao java 7, com novas classes e interfaces, com código melhorado. 
+
+A classe FILE trabalha tanto com diretórios como arquivos e a interface PATH (NIO) veio para substituir a classe FILE, 
+podemos considerar uma conversão de uma para outra.
+
+E para trabalhar com a interface PATH criaram uma classe chamada PATHS e uma classe chamada FILES
+  
+Para criar um PATH, utilizamos a classe PATHS
+A classe FILES - trabalha com métodos estáticos para trabalhar com os objetos do tipo PATH.
+
+
+AS classes File e Path são responsáveis por operações IO de arquivos. 
+nio.Path é uma interface que representa um caminho e deve ser instanciada pelo método get da classe nio.Paths. 
+nio.Files é responsável por realizar as operações de arquivos utilizando Path. 
+io.File é a classe antiga que implementa as mesmas funcionalidades. 
+
+O Principal motivo para o surgimento do pacote Java.nio, foi para resolver os problemas do antigo pacote Java.io: 
+	Mensagens de erros confusas;
+	suporte a metadados defeitusoso; 
+	ocasionando problemas de permissões;
+	falta de links simbólicos e erros no metodo rename(). 
+
+Resumo. 
+PATHS cria os PATH (como se fosse os FILE) e o FILES faz basicamente copiar ou deletar arquivos, ou seja, caso você queira criar 
+um ou mais diretórios e/ou arquivos, ou copiar e deletar arquivos e diretórios você pode utilizar estas classes.
+
+
+Métodos Overrides tanto do File quanto do Path:
+	toString
+	hashCode
+	equals
